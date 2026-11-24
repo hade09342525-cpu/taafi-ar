@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0E2233">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="تعافي منصة توعوية مستقلة تساعدك على فهم اضطرابات استخدام المواد، واستكشاف خطوات طلب المساعدة، ودعم رحلة التعافي والأسرة.">
+<title>تعافي | TAAFI — المعرفة بداية الطريق</title>
+<meta name="application-name" content="تعافي">
+<meta property="og:type" content="website">
+<meta property="og:title" content="تعافي | TAAFI — المعرفة بداية الطريق">
+<meta property="og:description" content="منصة توعوية مستقلة لفهم اضطرابات استخدام المواد وخطوات طلب المساعدة ودعم الأسرة.">
+<meta property="og:locale" content="ar_AR">
+<meta name="twitter:card" content="summary">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<style>
+:root{
+  --ink:#0E2233; --ink-2:#17354D; --teal:#14877B; --teal-d:#0E6A60;
+  --mist:#EAF1F3; --paper:#F8FAFB; --line:#D3DEE3; --amber:#E8B04A;
+  --alert:#7A1F17; --text:#1C2B36; --muted:#53656F;
+  --r-sm:8px; --r-lg:22px;
+  --font:"Noto Sans Arabic","Segoe UI",Tahoma,"Droid Arabic Naskh",system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font);color:var(--text);background:var(--paper);line-height:1.9;font-size:17px}
+img,svg{max-width:100%;display:block}
+a{color:var(--teal-d)}
+h1,h2,h3{line-height:1.35;margin:0 0 .5em;color:var(--ink)}
+p{margin:0 0 1em}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin-inline:auto;padding-inline:20px}
+.narrow{max-width:62ch}
+.sec{padding-block:clamp(56px,9vw,104px)}
+.sec.alt{background:var(--mist)}
+.sec h2{font-size:clamp(1.6rem,4.2vw,2.5rem)}
+.lead{font-size:1.1rem;color:var(--muted)}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip-link{position:absolute;inset-inline-start:12px;top:-60px;background:var(--amber);color:var(--ink);padding:10px 16px;border-radius:var(--r-sm);z-index:100;font-weight:700}
+.skip-link:focus{top:12px}
+
+/* شريط التقدم */
+.progress{position:fixed;top:0;inset-inline:0;height:4px;z-index:60;background:transparent}
+.progress i{display:block;height:100%;width:0;background:var(--amber)}
+
+/* الطوارئ */
+.emergency{background:var(--alert);color:#fff;padding:10px 20px;font-size:.95rem;line-height:1.7;text-align:center}
+.emergency strong{margin-inline-end:6px}
+
+/* خروج سريع */
+.quick-exit{position:fixed;bottom:16px;inset-inline-start:16px;z-index:70;background:var(--alert);color:#fff;border:2px solid #fff;border-radius:999px;padding:10px 18px;font:700 .95rem var(--font);cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.35)}
+.quick-exit:hover{background:#5d170f}
+
+/* الترويسة */
+.header{position:sticky;top:0;z-index:50;background:rgba(248,250,251,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.header .wrap{display:flex;align-items:center;gap:18px;min-height:64px}
+.brand{display:flex;align-items:baseline;gap:8px;text-decoration:none;color:var(--ink);font-weight:800;font-size:1.4rem;flex:none}
+.brand small{font-size:.8rem;color:var(--teal-d);font-weight:700;letter-spacing:.08em}
+.nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin-inline-start:auto}
+.nav::-webkit-scrollbar{display:none}
+.nav a{white-space:nowrap;text-decoration:none;color:var(--text);padding:8px 12px;border-radius:999px;font-size:.95rem}
+.nav a:hover,.nav a.active{background:var(--ink);color:#fff}
+
+/* الهيرو */
+.hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{position:relative;padding-block:clamp(64px,12vw,140px);z-index:1}
+.hero h1{color:#fff;font-size:clamp(2.3rem,8vw,4.8rem);font-weight:800;max-width:14ch;margin-bottom:.4em;line-height:1.25}
+.hero p{max-width:46ch;font-size:1.15rem;color:#C9D8E0}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;text-decoration:none;border:2px solid transparent;border-radius:999px;padding:13px 26px;font:700 1rem var(--font);cursor:pointer;transition:background .2s,color .2s}
+.btn.primary{background:var(--amber);color:var(--ink)}
+.btn.primary:hover{background:#f3c46a}
+.btn.ghost{border-color:#5B7A8E;color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.btn.solid{background:var(--ink);color:#fff}
+.btn.solid:hover{background:var(--ink-2)}
+.btn.outline{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn.outline:hover{background:var(--ink);color:#fff}
+.hero-path{position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:.9}
+.hero-path .trail{stroke-dasharray:1800;stroke-dashoffset:1800;animation:draw 3.2s .3s ease-out forwards}
+.hero-path .dot{opacity:0;animation:pop .5s forwards}
+.hero-path .d1{animation-delay:.3s}.hero-path .d2{animation-delay:1.6s}.hero-path .d3{animation-delay:3.2s}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{to{opacity:1}}
+.assure{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:36px;color:#9FB6C3;font-size:.95rem}
+
+/* المسارات */
+.paths{display:grid;gap:0;border-top:2px solid var(--ink);margin-top:28px}
+.path{display:grid;grid-template-columns:1fr auto;gap:6px 18px;align-items:center;padding:22px 4px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--text)}
+.path:hover{background:var(--mist)}
+.path strong{font-size:1.25rem;color:var(--ink)}
+.path span{color:var(--muted);grid-column:1}
+.path b{grid-row:1/3;grid-column:2;color:var(--teal-d);font-size:1.6rem}
+
+/* المعرفة */
+.knowledge{display:grid;gap:28px 48px;grid-template-columns:repeat(2,1fr);margin-top:36px}
+.knowledge div{border-inline-start:4px solid var(--teal);padding-inline-start:18px}
+.knowledge h3{font-size:1.15rem}
+.knowledge p{color:var(--muted);margin:0}
+.note{display:flex;gap:12px;margin-top:40px;padding:16px 18px;background:#fff;border:1px solid var(--line);border-radius:var(--r-sm);font-size:.95rem;color:var(--muted)}
+.note::before{content:"i";flex:none;width:26px;height:26px;border-radius:50%;background:var(--ink);color:#fff;font:700 .9rem/26px var(--font);text-align:center}
+.note p{margin:0}
+
+/* الفحص */
+.tools{display:grid;gap:20px;grid-template-columns:repeat(2,1fr);margin-top:32px}
+.tool{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:26px}
+.tool h3{font-size:1.2rem}
+.tool .tag{display:inline-block;background:var(--mist);color:var(--ink);padding:2px 12px;border-radius:999px;font-size:.85rem;font-weight:700;margin-bottom:12px}
+.tool .status{font-size:.9rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:12px;margin:14px 0 0}
+.reflect{margin-top:48px;background:var(--ink);color:#fff;border-radius:var(--r-lg);padding:clamp(22px,5vw,44px)}
+.reflect h3{color:#fff;font-size:1.5rem}
+.reflect > p{color:#C9D8E0}
+.q-list{display:grid;gap:10px;margin:24px 0}
+.q-item{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border:1px solid #35566D;border-radius:var(--r-sm);cursor:pointer}
+.q-item:hover{background:rgba(255,255,255,.06)}
+.q-item input{width:22px;height:22px;margin-top:5px;accent-color:var(--amber);flex:none}
+.q-item:has(input:checked){border-color:var(--amber);background:rgba(232,176,74,.12)}
+.q-actions{display:flex;flex-wrap:wrap;gap:12px}
+.result{margin-top:24px;padding:20px;background:#fff;color:var(--text);border-radius:var(--r-sm)}
+.result h4{margin:0 0 8px;font-size:1.1rem;color:var(--ink)}
+.result ul{margin:10px 0;padding-inline-start:22px}
+
+/* الخطوات الأولى */
+.first{display:grid;gap:0;margin-top:32px;grid-template-columns:repeat(2,1fr);gap:18px 40px}
+.first article{display:flex;gap:16px}
+.first .n{flex:none;width:42px;height:42px;border-radius:50%;background:var(--teal);color:#fff;font-weight:800;display:grid;place-items:center}
+.first h3{font-size:1.1rem;margin-bottom:.2em}
+.first p{color:var(--muted);margin:0}
+.safety{margin-top:36px;border:2px solid var(--alert);background:#fff;border-radius:var(--r-sm);padding:18px 20px}
+.safety strong{color:var(--alert)}
+.safety p{margin:.3em 0 0}
+
+/* الرحلة */
+.tabs{display:flex;gap:8px;overflow-x:auto;margin-top:32px;padding-bottom:6px;scrollbar-width:thin}
+.tab{flex:none;border:2px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:10px 20px;font:700 .98rem var(--font);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--ink);color:#fff}
+.panel{margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(22px,4vw,38px)}
+.panel h3{font-size:1.4rem}
+.panel .ask{margin-top:18px;padding:14px 18px;background:var(--mist);border-inline-start:4px solid var(--amber);border-radius:var(--r-sm)}
+.panel .ask b{display:block;margin-bottom:4px;color:var(--ink)}
+.panel-nav{display:flex;justify-content:space-between;gap:10px;margin-top:22px}
+
+/* التهدئة */
+.calm{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.breath-box{text-align:center}
+.breath{width:min(260px,70vw);aspect-ratio:1;border-radius:50%;margin:0 auto 22px;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#2BB6A5,#0E6A60);color:#fff;font-weight:700;font-size:1.2rem;transform:scale(.7);box-shadow:0 0 0 14px rgba(20,135,123,.15)}
+.breath.in{transform:scale(1);transition:transform 4s ease-in-out}
+.breath.out{transform:scale(.7);transition:transform 6s ease-in-out}
+
+/* الأسرة */
+.family{display:grid;gap:24px;grid-template-columns:repeat(2,1fr);margin-top:32px}
+.fam{padding:26px;border-radius:var(--r-lg);border:1px solid var(--line);background:#fff}
+.fam.do{border-top:6px solid var(--teal)}
+.fam.dont{border-top:6px solid var(--alert)}
+.fam ul{margin:0;padding-inline-start:20px}
+.fam li{margin-bottom:.6em}
+
+/* المصادر */
+.res{display:grid;gap:0;margin-top:28px;border-top:2px solid var(--ink)}
+.res a{display:grid;gap:2px;padding:18px 4px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--text)}
+.res a:hover{background:#fff}
+.res strong{color:var(--ink);font-size:1.1rem}
+.res small{color:var(--muted)}
+.res em{font-style:normal;font-size:.85rem;color:var(--teal-d);font-weight:700}
+.draft{font-size:.9rem;color:var(--muted);margin-top:16px}
+.directory{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:center;border:2px dashed var(--line);border-radius:var(--r-lg);padding:28px}
+.directory p{margin:0;color:var(--muted)}
+.badge{background:var(--mist);padding:8px 18px;border-radius:999px;font-weight:700;color:var(--ink)}
+
+/* الأسئلة */
+.faq-search{width:100%;max-width:520px;margin:20px 0;padding:13px 18px;border:2px solid var(--line);border-radius:999px;font:1rem var(--font);background:#fff}
+.faq-search:focus{border-color:var(--teal);outline:none}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:var(--r-sm);margin-bottom:10px}
+.faq summary{cursor:pointer;padding:16px 18px;font-weight:700;color:var(--ink);list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--teal-d)}
+.faq details[open] summary::after{content:"−"}
+.faq details p{padding:0 18px;margin:0 0 16px;color:var(--muted)}
+.faq-empty{color:var(--muted)}
+
+/* الفوتر */
+.footer{background:var(--ink);color:#C9D8E0;padding-block:48px 90px;font-size:.95rem}
+.footer strong{color:#fff;font-size:1.2rem}
+.footer a{color:var(--amber)}
+
+/* الهاتف */
+@media (max-width:760px){
+  body{font-size:16px}
+  .knowledge,.tools,.first,.family,.calm{grid-template-columns:1fr}
+  .header .wrap{gap:10px}
+  .brand small{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero-path .trail{animation:none;stroke-dashoffset:0}
+  .hero-path .dot{animation:none;opacity:1}
+  .breath.in,.breath.out{transition:none}
+}
+@media print{.quick-exit,.header,.emergency,.progress{display:none}}
+
+/* ===== TAAFI DESIGN SYSTEM v2 — واجهة محسّنة مع الحفاظ على الوظائف ===== */
+:root{
+  --ink:#10283B;
+  --ink-2:#183D54;
+  --teal:#168C82;
+  --teal-d:#0F7169;
+  --mist:#EDF4F5;
+  --paper:#F7FAFB;
+  --line:#DCE7EA;
+  --amber:#E8B65B;
+  --text:#203440;
+  --muted:#627681;
+  --r-sm:14px;
+  --r-lg:26px;
+  --shadow-soft:0 12px 34px rgba(16,40,59,.07);
+  --shadow-card:0 18px 48px rgba(16,40,59,.10);
+}
+body{
+  background:
+    radial-gradient(ellipse at 92% 8%,rgba(22,140,130,.055),transparent 28rem),
+    var(--paper);
+  color:var(--text);
+  letter-spacing:0;
+}
+.wrap{max-width:1160px;padding-inline:clamp(16px,3vw,30px)}
+.sec{padding-block:clamp(64px,8vw,112px)}
+.sec.alt{
+  background:linear-gradient(180deg,#EFF5F6 0%,#F5F8F9 100%);
+  border-block:1px solid rgba(220,231,234,.7);
+}
+.sec h2{font-weight:850;letter-spacing:-.035em;margin-bottom:12px}
+.lead{max-width:62ch;line-height:2;color:#60737E}
+.header{
+  background:rgba(249,252,252,.9);
+  border-bottom:1px solid rgba(210,224,228,.85);
+  box-shadow:0 5px 24px rgba(16,40,59,.035);
+  backdrop-filter:blur(16px);
+}
+.header .wrap{min-height:76px;gap:24px}
+.brand{align-items:center;gap:10px;font-size:1.55rem;letter-spacing:-.04em}
+.brand:before{
+  content:"ت";
+  display:grid;place-items:center;width:42px;height:42px;border-radius:14px;
+  color:#fff;font-size:1.45rem;font-weight:900;
+  background:linear-gradient(145deg,#1B9A8D,#0D6D69);
+  box-shadow:0 7px 16px rgba(15,113,105,.22);
+}
+.brand small{font-size:.72rem;letter-spacing:.14em;color:#16877D}
+.nav{gap:5px}
+.nav a{padding:9px 13px;font-size:.9rem;font-weight:650;transition:.2s ease}
+.nav a:hover,.nav a.active{background:#102F43;color:#fff;box-shadow:0 5px 14px rgba(16,47,67,.14)}
+.hero{
+  isolation:isolate;
+  background:
+    radial-gradient(ellipse at 82% 15%,rgba(33,155,143,.28),transparent 34%),
+    radial-gradient(ellipse at 12% 90%,rgba(232,182,91,.12),transparent 32%),
+    linear-gradient(125deg,#0D2233 0%,#12364A 58%,#0E4C50 120%);
+}
+.hero:after{
+  content:"";
+  position:absolute;z-index:-1;inset:auto -10% -65% auto;
+  width:min(68vw,760px);aspect-ratio:1;border:1px solid rgba(255,255,255,.09);
+  border-radius:50%;box-shadow:0 0 0 42px rgba(255,255,255,.025),0 0 0 90px rgba(255,255,255,.018);
+}
+.hero .wrap{padding-block:clamp(82px,12vw,150px);max-width:1160px}
+.hero h1{
+  max-width:13ch;font-size:clamp(2.55rem,7vw,5.25rem);
+  line-height:1.18;letter-spacing:-.055em;text-wrap:balance;
+}
+.hero p{max-width:53ch;color:#D0E0E5;line-height:2;font-size:clamp(1.02rem,2vw,1.2rem)}
+.hero-actions{margin-top:34px;gap:13px}
+.btn{
+  padding:14px 25px;border-radius:14px;min-height:50px;
+  box-shadow:0 6px 16px rgba(0,0,0,.08);
+}
+.btn.primary{background:linear-gradient(135deg,#F1C878,#E6AE4E);color:#10283B}
+.btn.ghost{border-color:rgba(220,239,241,.45);background:rgba(255,255,255,.035)}
+.assure{gap:10px 24px;margin-top:40px;color:#B7CDD4}
+.assure span{display:flex;align-items:center;gap:7px}
+.assure span:before{
+  content:"✓";display:grid;place-items:center;width:21px;height:21px;
+  border-radius:50%;background:rgba(35,171,151,.2);color:#7DE0C8;font-weight:900;
+}
+.paths{border:0;gap:12px;margin-top:34px;grid-template-columns:repeat(3,minmax(0,1fr))}
+.path{
+  position:relative;display:flex;flex-direction:column;align-items:flex-start;
+  min-height:164px;padding:24px;background:#fff;border:1px solid var(--line);
+  border-radius:20px;box-shadow:var(--shadow-soft);transition:transform .22s,border-color .22s,box-shadow .22s;
+}
+.path:hover{background:#fff;transform:translateY(-4px);border-color:#A9D5D0;box-shadow:var(--shadow-card)}
+.path strong{font-size:1.13rem;line-height:1.55}
+.path span{grid-column:auto;color:var(--muted);font-size:.94rem;line-height:1.8}
+.path b{position:absolute;inset-inline-end:20px;bottom:17px;font-size:1.3rem;color:var(--teal)}
+.knowledge{gap:16px 18px;margin-top:38px}
+.knowledge div{
+  padding:23px 22px;background:rgba(255,255,255,.82);
+  border:1px solid var(--line);border-inline-start:4px solid var(--teal);
+  border-radius:18px;box-shadow:0 8px 22px rgba(16,40,59,.035);
+}
+.knowledge h3{font-size:1.12rem}
+.note{margin-top:30px;padding:18px 20px;background:#fff;border:1px solid var(--line);border-radius:16px}
+.tools{gap:18px;margin-top:34px}
+.tool,.fam{
+  border:1px solid var(--line);border-radius:22px;padding:28px;
+  box-shadow:var(--shadow-soft);
+}
+.tool{transition:transform .2s,box-shadow .2s}
+.tool:hover{transform:translateY(-3px);box-shadow:var(--shadow-card)}
+.tool .tag{background:#E5F3F1;color:#0F7169;padding:5px 13px}
+.reflect{
+  margin-top:36px;border-radius:26px;padding:clamp(24px,5vw,46px);
+  background:linear-gradient(135deg,#10283B,#164B54);
+  box-shadow:0 22px 55px rgba(16,40,59,.16);
+}
+.q-item{border-radius:14px;border-color:rgba(202,229,230,.22);line-height:1.75}
+.q-item:hover{background:rgba(255,255,255,.08)}
+.result{border-radius:16px}
+.first{gap:24px 34px}
+.first article{padding:18px;border:1px solid var(--line);background:#fff;border-radius:18px;box-shadow:0 8px 24px rgba(16,40,59,.04)}
+.first .n{background:linear-gradient(145deg,#1B9A8D,#0F7169);box-shadow:0 6px 13px rgba(15,113,105,.2)}
+.safety{border-radius:16px;padding:20px 22px}
+.tabs{gap:10px}
+.tab{border-width:1px;border-color:#C7D9DE;background:#fff;padding:11px 19px;transition:.2s}
+.tab[aria-selected="true"]{background:#102F43;border-color:#102F43;box-shadow:0 6px 16px rgba(16,47,67,.15)}
+.panel{margin-top:16px;border-radius:24px;padding:clamp(24px,4vw,42px);box-shadow:var(--shadow-soft)}
+.panel .ask{border-radius:14px}
+.breath{
+  background:radial-gradient(circle at 35% 30%,#37C2AE,#0D756D);
+  box-shadow:0 0 0 14px rgba(20,135,123,.10),0 18px 45px rgba(14,106,96,.18);
+}
+.fam{background:#fff}
+.fam.do{border-top:5px solid var(--teal)}
+.fam.dont{border-top:5px solid #9A5149}
+.res a{padding:20px 18px;border-bottom:1px solid var(--line);border-radius:12px}
+.res a:hover{background:#fff;box-shadow:var(--shadow-soft)}
+.directory{border:1px dashed #B9CDD3;border-radius:22px;background:rgba(255,255,255,.65)}
+.badge{background:#E6F2F0;color:#0F7169}
+.faq details{border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 5px 16px rgba(16,40,59,.025)}
+.faq summary{padding:18px 20px}
+.faq details p{padding-inline:20px;line-height:1.9}
+.faq-search{border-radius:14px;max-width:560px}
+.footer{background:linear-gradient(135deg,#0D2233,#123B4B);padding-block:54px 90px}
+.quick-exit{border-radius:14px;padding:10px 16px;box-shadow:0 8px 22px rgba(0,0,0,.2)}
+.progress{height:3px}
+.progress i{background:linear-gradient(90deg,#E8B65B,#39B6A4)}
+a,button{-webkit-tap-highlight-color:transparent}
+button:disabled{cursor:not-allowed}
+@media(max-width:900px){
+  .header .wrap{align-items:flex-start;flex-direction:column;gap:5px;padding-block:10px}
+  .nav{width:100%;margin:0;padding-bottom:3px}
+  .nav a{font-size:.86rem;padding:8px 11px}
+  .paths{grid-template-columns:1fr}
+  .path{min-height:130px}
+}
+@media(max-width:760px){
+  .knowledge,.tools,.first,.family,.calm{grid-template-columns:1fr}
+  .hero .wrap{padding-block:76px 82px}
+  .hero h1{max-width:12ch;font-size:clamp(2.35rem,11vw,3.65rem)}
+  .hero p{font-size:1rem}
+  .assure{display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:.85rem}
+  .sec{padding-block:62px}
+  .tool,.fam{padding:22px}
+  .first article{padding:16px}
+  .panel-nav{flex-wrap:wrap}
+  .panel-nav .btn{flex:1}
+  .quick-exit{bottom:12px;inset-inline-start:12px;font-size:.85rem}
+}
+@media(max-width:390px){
+  .brand{font-size:1.35rem}
+  .nav a{padding:7px 9px;font-size:.8rem}
+  .hero-actions{flex-direction:column;align-items:stretch}
+  .hero-actions .btn{text-align:center}
+  .assure{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}
+
+
+/* إضافات تعافي الوظيفية - الإصدار v3 */
+.extra-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:26px}
+.extra-card{background:var(--card,#fff);border:1px solid var(--line,#dce7e5);border-radius:20px;padding:22px;box-shadow:0 10px 28px rgba(14,34,51,.06)}
+.extra-card h3{margin:0 0 10px;color:var(--ink,#173246)}
+.extra-card p{margin:0;color:var(--muted,#60717b);line-height:1.85}
+.challenge-box,.assistant-box,.contact-box{max-width:850px;margin:28px auto 0;background:var(--card,#fff);border:1px solid var(--line,#dce7e5);border-radius:24px;padding:clamp(18px,4vw,30px);box-shadow:0 14px 36px rgba(14,34,51,.07)}
+.challenge-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.challenge-count{font-weight:800;color:var(--accent,#14877b)}
+.challenge-list{display:grid;gap:10px;margin:20px 0}
+.challenge-item{display:flex;align-items:flex-start;gap:12px;padding:13px;border:1px solid var(--line,#dce7e5);border-radius:14px;line-height:1.7}
+.challenge-item input{width:20px;height:20px;margin-top:4px;accent-color:var(--accent,#14877b);flex:0 0 auto}
+.meter{height:10px;background:#e8efed;border-radius:20px;overflow:hidden;margin:15px 0}
+.meter span{display:block;height:100%;width:0;background:var(--accent,#14877b);transition:width .25s}
+.small-note{font-size:.9rem;color:var(--muted,#60717b);line-height:1.8}
+.story-label{display:inline-block;font-size:.78rem;padding:5px 10px;border-radius:20px;background:#fff3d8;color:#76521a;margin-bottom:12px}
+.assistant-messages{min-height:160px;max-height:320px;overflow:auto;background:var(--soft,#f4f8f7);padding:16px;border-radius:16px;margin:16px 0;display:flex;flex-direction:column;gap:12px}
+.chat-msg{max-width:90%;padding:12px 15px;border-radius:16px;line-height:1.8;white-space:pre-wrap}
+.chat-msg.bot{align-self:flex-start;background:var(--card,#fff);border:1px solid var(--line,#dce7e5)}
+.chat-msg.user{align-self:flex-end;background:#dff2ee;color:#173e3a}
+.assistant-form{display:flex;gap:10px;flex-wrap:wrap}
+.assistant-form input{flex:1 1 220px;min-width:0;padding:13px;border:1px solid var(--line,#dce7e5);border-radius:12px;font:inherit;background:var(--card,#fff);color:inherit}
+.assistant-options{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.assistant-options button{border:1px solid var(--line,#dce7e5);background:var(--card,#fff);color:inherit;border-radius:30px;padding:8px 13px;font:inherit;cursor:pointer}
+.contact-box textarea{width:100%;min-height:130px;padding:14px;border:1px solid var(--line,#dce7e5);border-radius:14px;font:inherit;resize:vertical;background:var(--card,#fff);color:inherit}
+.contact-status{margin-top:12px;padding:12px;border-radius:12px;background:var(--soft,#f4f8f7);line-height:1.8}
+@media(max-width:620px){.assistant-form .btn{width:100%}.challenge-head{align-items:flex-start}}
+
+
+/* ===== النسخة النهائية v4 ===== */
+:root{--accent:#14877B;--card:#fff;--soft:#F1F6F7}
+[hidden]{display:none!important}
+.chat-msg.bot.urgent{border:2px solid var(--alert);background:#fff7f6}
+.legal{max-width:760px}
+.legal h3{margin-top:1.6em;font-size:1.2rem}
+.legal ul{padding-inline-start:22px;margin:0 0 1em}
+.legal li{margin-bottom:.55em}
+.status-box{display:inline-block;margin-top:6px;padding:8px 16px;border-radius:999px;background:#fff3d8;color:#6b4a14;font-weight:700;font-size:.92rem}
+.footer-links{display:flex;flex-wrap:wrap;gap:8px 22px;margin:14px 0}
+.footer .btn{margin-top:10px}
+noscript .ns{background:#fff3d8;color:#4a3410;padding:14px 20px;text-align:center}
+.chat-msg.bot.ai::after{content:"رد مولَّد بالذكاء الاصطناعي وقد يخطئ؛ لا يغني عن المختص.";display:block;margin-top:8px;font-size:.78rem;color:var(--muted)}
+@media(max-width:900px){html{scroll-padding-top:112px}}
+@media print{.quick-exit,.header,.emergency,.progress,.assistant-box,.footer .btn{display:none!important}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">تجاوز إلى المحتوى الرئيسي</a>
+<div class="progress" aria-hidden="true"><i id="bar"></i></div>
+
+<div class="emergency" role="alert">
+  <strong>هل هناك خطر صحي الآن؟</strong>
+  فقدان وعي، صعوبة أو بطء شديد في التنفس، تشنجات، أو اشتباه بجرعة زائدة؟ لا تنتظر؛ اطلب الإسعاف أو توجّه فوراً إلى أقرب قسم طوارئ.
+</div>
+
+<button type="button" class="quick-exit" id="quick-exit" title="ينقلك إلى صفحة عامة، لكنه لا يمحو سجل التصفح">خروج سريع ×</button>
+
+<header class="header" id="top">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="تعافي — الرئيسية">تعافي <small>TAAFI</small></a>
+    <nav class="nav" id="nav" aria-label="القائمة الرئيسية">
+      <a href="#understand">افهم</a>
+      <a href="#screening">الاستكشاف</a>
+      <a href="#journey">الرحلة</a>
+      <a href="#challenge">وأنت قادر</a>
+      <a href="#family">الأسرة</a>
+      <a href="#assistant">المساعد</a>
+      <a href="#library">المصادر</a>
+      <a href="#contact">رسالتي</a>
+      <a href="#faq">الأسئلة</a>
+      <a href="#about">من نحن</a>
+      <a href="#privacy">الخصوصية</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <noscript><div class="ns">بعض الأقسام التفاعلية (الأسئلة الشخصية، مراحل الرحلة، التمرين، المساعد) تحتاج تفعيل جافاسكربت في المتصفح.</div></noscript>
+
+  <section class="hero" id="home" aria-labelledby="h1">
+    <svg class="hero-path" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <path class="trail" d="M1180 560 C 980 560, 900 460, 780 420 S 540 380, 440 270 S 250 120, 60 70" fill="none" stroke="#14877B" stroke-width="5" stroke-linecap="round"/>
+      <circle class="dot d1" cx="1180" cy="560" r="10" fill="#E8B04A"/>
+      <circle class="dot d2" cx="610" cy="355" r="8" fill="#2BB6A5"/>
+      <circle class="dot d3" cx="60" cy="70" r="12" fill="#E8B04A"/>
+    </svg>
+    <div class="wrap">
+      <h1 id="h1">كل تغيير كبير يبدأ بخطوة صغيرة.</h1>
+      <p>مساحة آمنة لتفهم ما تمرّ به، وتتعرف إلى خيارات الدعم، وتبدأ طريقاً يناسب ظروفك. لا أحكام، ولا ضغط، فقط معرفة وخطوات واقعية نحو التغيير.</p>
+      <div class="hero-actions">
+        <a href="#first-step" class="btn primary">أريد أن أبدأ</a>
+        <a href="#understand" class="btn ghost">أريد أن أفهم أكثر</a>
+      </div>
+      <div class="assure">
+        <span>✓ بلا أحكام ولا وصم</span>
+        <span>✓ لا نطلب بياناتك</span>
+        <span>✓ لا نقدّم تشخيصاً</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="first-step" aria-labelledby="path-title">
+    <div class="wrap">
+      <h2 id="path-title">ما الأقرب إلى وضعك الآن؟</h2>
+      <p class="lead narrow">لا توجد بداية واحدة تناسب الجميع. اختر مساراً، ويمكنك التنقل بين المسارات في أي وقت.</p>
+      <div class="paths">
+        <a class="path" href="#screening"><strong>أنا قلق بشأن استخدامي</strong><span>تعرّف إلى مؤشرات تستحق الانتباه وإلى خيارات الدعم.</span><b aria-hidden="true">←</b></a>
+        <a class="path" href="#journey"><strong>أريد أن أبدأ التعافي</strong><span>افهم مراحل الرعاية وحضّر أسئلتك للمختص.</span><b aria-hidden="true">←</b></a>
+        <a class="path" href="#family"><strong>شخص أحبه يحتاج إلى دعم</strong><span>تعلّم كيف تفتح حواراً آمناً وتساند دون لوم.</span><b aria-hidden="true">←</b></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="understand" aria-labelledby="u-title">
+    <div class="wrap">
+      <h2 id="u-title">افهم ما يحدث بعيداً عن الخوف والوصمة</h2>
+      <p class="lead narrow">اضطرابات استخدام المواد حالات صحية تتداخل فيها عوامل بيولوجية ونفسية واجتماعية. وهي ليست دليلاً على ضعف الشخصية أو قلة الإرادة.</p>
+      <div class="knowledge">
+        <div><h3>ما اضطراب استخدام المواد؟</h3><p>نمط استخدام يصعب التحكم فيه ويستمر رغم آثاره السلبية على الصحة أو العلاقات أو الدراسة أو العمل.</p></div>
+        <div><h3>لماذا يصعب التوقف أحياناً؟</h3><p>قد تتأثر دوائر المكافأة والتعلّم والتحكم بالسلوك، وتؤثر في ذلك الضغوط والبيئة والصحة النفسية.</p></div>
+        <div><h3>هل التعافي ممكن؟</h3><p>نعم. توجد علاجات ودعم نفسي واجتماعي مثبتة الفائدة، ويحدد المختص الأنسب بحسب حالتك.</p></div>
+        <div><h3>هل الانتكاس يعني الفشل؟</h3><p>لا. هو إشارة إلى أن خطة الرعاية تحتاج مراجعة ودعماً أكبر، وليس سبباً للعار أو الاستسلام.</p></div>
+      </div>
+      <div class="note"><p>هذه معلومات تثقيفية عامة. التقييم والتشخيص وخطة العلاج من اختصاص مختص مؤهل، وتختلف الخيارات بحسب المادة والحالة الصحية.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" id="screening" aria-labelledby="s-title">
+    <div class="wrap">
+      <h2 id="s-title">الاستكشاف يساعد على طرح الأسئلة، لا على إصدار الأحكام</h2>
+      <p class="lead narrow">يستخدم المختصون أدوات فحص معتمدة للتعرف المبكر إلى المخاطر. نتيجتها ليست تشخيصاً ولا تحدد قيمتك أو مستقبلك.</p>
+
+      <div class="tools">
+        <article class="tool">
+          <span class="tag">متعدد المواد</span>
+          <h3>أداة ASSIST من منظمة الصحة العالمية</h3>
+          <p>تساعد على كشف المخاطر المرتبطة بمواد متعددة، منها التبغ والكحول والقنب والمنبهات والأفيونات.</p>
+          <a href="https://www.who.int/publications/i/item/978924159938-2" target="_blank" rel="noopener noreferrer">دليل الأداة (منظمة الصحة العالمية)</a>
+          <p class="status">النسخة التفاعلية العربية قيد الإعداد والمراجعة. لا تدخل إجاباتك في نماذج غير معتمدة.</p>
+        </article>
+        <article class="tool">
+          <span class="tag">خاص بالكحول</span>
+          <h3>أداة AUDIT من منظمة الصحة العالمية</h3>
+          <p>عشرة أسئلة لفحص أنماط شرب الكحول المرتبطة بزيادة الضرر، وتوجد منها نسخة مختصرة AUDIT-C.</p>
+          <a href="https://www.who.int/europe/tools-and-toolkits/alcohol-screening-and-brief-interventions-hub" target="_blank" rel="noopener noreferrer">موارد الأداة (منظمة الصحة العالمية)</a>
+          <p class="status">لن نعرض نتيجة رقمية قبل اعتماد النسخة وطريقة التصحيح.</p>
+        </article>
+      </div>
+
+      <div class="reflect" id="quiz">
+        <h3>أسئلة تساعدك على ترتيب أفكارك</h3>
+        <p>هذا الجزء للتأمل الشخصي فقط، وليس فحصاً سريرياً ولا يحسب درجة خطورة. اختر العبارات التي تنطبق عليك. لا تُحفظ إجاباتك ولا تُرسل إلى أي مكان.</p>
+        <fieldset style="border:0;padding:0;margin:0">
+          <legend class="visually-hidden">عبارات التأمل الشخصي</legend>
+          <div class="q-list" id="q-list"></div>
+        </fieldset>
+        <div class="q-actions">
+          <button type="button" class="btn primary" id="q-show">اعرض ملخص اختياراتي</button>
+          <button type="button" class="btn ghost" id="q-reset">ابدأ من جديد</button>
+        </div>
+        <div class="result" id="q-result" role="status" aria-live="polite" hidden></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="support" aria-labelledby="sp-title">
+    <div class="wrap">
+      <h2 id="sp-title">لا تحتاج إلى حل كل شيء اليوم</h2>
+      <p class="lead narrow">يمكن أن تكون الخطوة الأولى بسيطة: حديث مع شخص موثوق، أو موعد مع طبيب أو مختص.</p>
+      <div class="first">
+        <article><span class="n">1</span><div><h3>اختر شخصاً آمناً</h3><p>شخصاً تثق به ويستمع دون تهديد أو إهانة أو فضح.</p></div></article>
+        <article><span class="n">2</span><div><h3>اطلب تقييماً مهنياً</h3><p>اسأل عن طبيب أو اختصاصي لديه خبرة في اضطرابات استخدام المواد.</p></div></article>
+        <article><span class="n">3</span><div><h3>كن صريحاً بشأن السلامة</h3><p>أخبره بالمادة والأدوية والحالات الصحية والأعراض ليقيّم المخاطر بدقة.</p></div></article>
+        <article><span class="n">4</span><div><h3>لا تواجه الانسحاب وحدك</h3><p>التوقف المفاجئ عن بعض المواد، كالكحول والمهدئات، قد يكون خطراً. استشر مختصاً قبل أي تغيير.</p></div></article>
+      </div>
+      <div class="safety"><strong>مهم للسلامة</strong><p>إذا ظهرت أعراض شديدة أو تشنجات أو ارتباك شديد أو صعوبة تنفس أو فقدان وعي، اطلب رعاية طارئة فوراً. المحتوى الرقمي لا يغني عن الطوارئ.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" id="journey" aria-labelledby="j-title">
+    <div class="wrap">
+      <h2 id="j-title">رحلة مرنة تُبنى معك لا بدلاً منك</h2>
+      <p class="lead narrow">لا توجد وصفة واحدة. هذه مراحل عامة توضح ما قد تمر به عند التواصل مع خدمة متخصصة.</p>
+      <div class="tabs" id="tabs" role="tablist" aria-label="مراحل الرحلة"></div>
+      <div class="panel" id="panel" role="tabpanel" aria-live="polite" tabindex="0"></div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="calm" aria-labelledby="c-title">
+    <div class="wrap calm">
+      <div>
+        <h2 id="c-title">خذ لحظة لنفسك</h2>
+        <p class="lead">تمرين تنفّس بسيط قد يساعد على تهدئة التوتر مؤقتاً. ليس علاجاً للرغبة الملحّة أو لأعراض الانسحاب، ولا يغني عن المساعدة المتخصصة.</p>
+        <p class="draft">تنفّس بشكل مريح ولا تحبس نفسك. أوقف التمرين إذا شعرت بدوار.</p>
+      </div>
+      <div class="breath-box">
+        <div class="breath" id="breath"><span id="breath-text" role="status" aria-live="polite">جاهز؟</span></div>
+        <button type="button" class="btn solid" id="breath-btn">ابدأ التمرين</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="challenge" aria-labelledby="challenge-title">
+    <div class="wrap">
+      <h2 id="challenge-title">تحدّي «وأنت قادر»</h2>
+      <p class="lead narrow">لا نطلب منك تغيير حياتك بيوم واحد. اختر خطوات صغيرة وآمنة لليوم، واعتبر كل خطوة تقدماً يستحق التقدير.</p>
+      <div class="challenge-box">
+        <div class="challenge-head"><strong>خطوات اليوم</strong><span class="challenge-count" id="challenge-count">0 من 5 مكتملة</span></div>
+        <div class="meter" role="progressbar" aria-label="إنجاز خطوات اليوم" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0" id="challenge-meter"><span id="challenge-fill"></span></div>
+        <div class="challenge-list" id="challenge-list">
+          <label class="challenge-item"><input type="checkbox"><span>أتواصل مع شخص آمن أو أرسل له رسالة بسيطة.</span></label>
+          <label class="challenge-item"><input type="checkbox"><span>أخصص عشر دقائق لنشاط هادئ أو مشي آمن.</span></label>
+          <label class="challenge-item"><input type="checkbox"><span>أبتعد اليوم عن موقف أو محفّز أعرف أنه يزيد الضغط عليّ، إن أمكن.</span></label>
+          <label class="challenge-item"><input type="checkbox"><span>أكتب شعوري الآن دون أن أحكم على نفسي.</span></label>
+          <label class="challenge-item"><input type="checkbox"><span>أحدد خطوة دعم واحدة: موعد مختص أو سؤال أريد طرحه.</span></label>
+        </div>
+        <button class="btn primary" type="button" id="challenge-reset">إعادة ضبط خطوات اليوم</button>
+        <p class="small-note" id="challenge-feedback" aria-live="polite">كل خطوة صغيرة مهمة. اختر ما يناسب قدرتك اليوم.</p>
+      </div>
+      <p class="small-note">الخصوصية: تبقى حالة التحدي في نافذة المتصفح الحالية فقط، وتُمسح عند إغلاقها أو عند الضغط على «خروج سريع». لا تُرسل إلى أي جهة.</p>
+    </div>
+  </section>
+
+  <section class="sec alt" id="life-after" aria-labelledby="life-title">
+    <div class="wrap">
+      <h2 id="life-title">الحياة بعد التوقف عن الاستخدام</h2>
+      <p class="lead narrow">التعافي لا يعني اختفاء الصعوبات فوراً. بناء يوم مستقر يحتاج وقتاً، وخطة واقعية، ودعماً مناسباً.</p>
+      <div class="extra-grid">
+        <article class="extra-card"><h3>عندما تظهر الرغبة الشديدة</h3><p>سمِّ ما يحدث دون لوم، وابتعد عن المحفّز إن استطعت، واتصل بشخص داعم، واطلب مساعدة مختص لوضع خطة للتعامل مع الرغبة.</p></article>
+        <article class="extra-card"><h3>تنظيم أوقات الفراغ</h3><p>ابدأ بروتين بسيط: نوم منتظم قدر الإمكان، وجبات، حركة مناسبة، ومهمة صغيرة يومياً. لا تملأ جدولك بما يفوق طاقتك.</p></article>
+        <article class="extra-card"><h3>العلاقات والحدود</h3><p>اقترب تدريجياً من الأشخاص الذين يحترمون سلامتك، وضع حدوداً واضحة مع المواقف والعلاقات التي تعيدك إلى الخطر.</p></article>
+        <article class="extra-card"><h3>إذا حدثت عودة للاستخدام</h3><p>لا تخفِ الأمر عن فريقك العلاجي. اطلب تقييماً سريعاً، وراجع المحفّزات والخطة. إذا وُجد احتمال جرعة زائدة أو أعراض خطرة فاطلب الطوارئ فوراً.</p></article>
+      </div>
+      <div class="note"><p><strong>تنبيه:</strong> لا توقف الكحول أو المهدئات أو أي دواء موصوف فجأة من تلقاء نفسك؛ قد يكون الانسحاب خطيراً ويحتاج تقييماً وإشرافاً طبياً.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" id="stories" aria-labelledby="stories-title">
+    <div class="wrap">
+      <h2 id="stories-title">لا يوجد مستحيل ما دمت هنا</h2>
+      <p class="lead narrow">التغيير ممكن، لكنه ليس خطاً مستقيماً ولا وعداً بنتيجة سريعة. هذه أمثلة توضيحية افتراضية وليست قصص أشخاص حقيقيين أو شهادات نجاح موثقة.</p>
+      <div class="extra-grid">
+        <article class="extra-card"><span class="story-label">مثال افتراضي</span><h3>خطوة طلب المساعدة</h3><p>شخص كان يؤجل الحديث خوفاً من الحكم عليه. بدأ بكتابة أسئلته ثم حجز تقييماً مهنياً. لم تُحل كل الصعوبات فوراً، لكنه لم يعد يواجهها وحده.</p></article>
+        <article class="extra-card"><span class="story-label">مثال افتراضي</span><h3>إعادة بناء اليوم</h3><p>شخص شعر بفراغ كبير بعد تغيير نمط حياته. بدأ بروتين بسيط ونشاط أسبوعي وشخص موثوق يتابع معه، وعدّل الخطة عندما لم تناسبه.</p></article>
+        <article class="extra-card"><span class="story-label">مثال افتراضي</span><h3>التعامل مع التعثر</h3><p>شخص عاد إلى الاستخدام بعد فترة. تواصل مع المختص بدلاً من إخفاء ما حدث، وراجع خطة السلامة والدعم. التعثر لم يلغِ حقه في الرعاية.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="family" aria-labelledby="f-title">
+    <div class="wrap">
+      <h2 id="f-title">ساند الشخص ولا تختصره بالمشكلة</h2>
+      <p class="lead narrow">وجود شخص داعم يساعد في الوصول إلى الرعاية والاستمرار فيها. الدعم لا يعني أن تتحمل كل شيء وحدك أو أن تعرّض نفسك للخطر.</p>
+      <div class="family">
+        <article class="fam do"><h3>ما الذي يمكنك فعله؟</h3><ul>
+          <li>ابدأ الحديث بهدوء وخصوصية، وعبّر عن قلقك دون اتهام.</li>
+          <li>استمع واسأل: «كيف يمكنني مساعدتك؟»</li>
+          <li>شجّع على التقييم المهني واعرض المساعدة في الوصول إليه.</li>
+          <li>ضع حدوداً واضحة تحمي سلامتك ومواردك.</li>
+          <li>اطلب دعماً لنفسك أيضاً.</li></ul></article>
+        <article class="fam dont"><h3>ما الذي يُفضّل تجنّبه؟</h3><ul>
+          <li>التهديد والإهانة والفضح واستخدام الوصمة.</li>
+          <li>تشخيص الشخص أو علاجه بالقوة دون مختص.</li>
+          <li>إعطاؤه أدوية أو خلطات أو نصائح لإيقاف المادة.</li>
+          <li>التغطية المستمرة على الأضرار بما يزيد الخطر.</li>
+          <li>المواجهة إذا كان هناك عنف أو خطر مباشر.</li></ul></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="assistant" aria-labelledby="assistant-title">
+    <div class="wrap">
+      <h2 id="assistant-title">مساعد تعافي</h2>
+      <p class="lead narrow">مساحة إرشادية أولية تساعدك على ترتيب ما تريد السؤال عنه. تعمل افتراضياً بردود إرشادية محلية، ويمكنك اختيارياً تفعيل ردود بالذكاء الاصطناعي. وهي ليست بديلاً عن المختص.</p>
+      <div class="assistant-box">
+        <div class="assistant-messages" id="assistant-messages" role="log" aria-live="polite">
+          <div class="chat-msg bot">أهلاً بك. يمكنك اختيار موضوع أو كتابة سؤالك. لا تكتب اسمك أو رقم هاتفك أو أي معلومة تكشف هويتك. إذا كنت في خطر صحي الآن، اطلب الطوارئ مباشرة.</div>
+        </div>
+        <div class="assistant-options" aria-label="مواضيع مقترحة">
+          <button type="button" data-topic="craving">عندي رغبة قوية الآن</button>
+          <button type="button" data-topic="family">كيف أخبر شخصاً قريباً؟</button>
+          <button type="button" data-topic="help">كيف أطلب مساعدة متخصصة؟</button>
+          <button type="button" data-topic="relapse">حدثت عودة للاستخدام</button>
+        </div>
+        <label class="challenge-item" id="ai-consent" hidden style="margin-top:14px">
+          <input type="checkbox" id="ai-check">
+          <span>أريد ردوداً بالذكاء الاصطناعي. أفهم أن رسائلي ستُرسل إلى Google (Gemini) لتوليد الرد، وأن Google قد تستخدمها لتحسين منتجاتها حسب شروط الخدمة المجانية، وأن الردود قد تخطئ ولا تغني عن المختص. لا أكتب اسمي ولا معلومات تعريفية.</span>
+        </label>
+        <form class="assistant-form" id="assistant-form">
+          <input id="assistant-input" type="text" maxlength="500" placeholder="اكتب ما يشغلك دون بيانات شخصية…" autocomplete="off" aria-label="اكتب سؤالك">
+          <button class="btn primary" type="submit">إرسال</button>
+        </form>
+        <p class="small-note">ملاحظة خصوصية: الأزرار المقترحة والوضع الافتراضي يعملان على جهازك دون إرسال شيء، والمحادثة لا تُحفظ. تُرسل رسائلك للمعالجة فقط إذا فعّلت خيار الذكاء الاصطناعي، وتُحذف من الصفحة عند إغلاقها. عند ذكر خطر عاجل يبقى الرد محلياً ولا يُرسل شيء.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="library" aria-labelledby="l-title">
+    <div class="wrap">
+      <h2 id="l-title">مراجع قبل الآراء</h2>
+      <p class="lead narrow">نبني المحتوى على أدلة المؤسسات الصحية والمنشورات العلمية.</p>
+      <div class="res">
+        <a href="https://www.who.int/publications/i/item/978924000219-7" target="_blank" rel="noopener noreferrer"><em>معايير علاجية</em><strong>المعايير الدولية لعلاج اضطرابات استخدام المخدرات</strong><small>منظمة الصحة العالمية ومكتب الأمم المتحدة المعني بالمخدرات والجريمة</small></a>
+        <a href="https://www.who.int/publications/i/item/the-who-assist-package-for-hazardous-and-harmful-substance-use" target="_blank" rel="noopener noreferrer"><em>فحص وتدخل موجز</em><strong>حزمة WHO ASSIST لاستخدام المواد</strong><small>منظمة الصحة العالمية</small></a>
+        <a href="https://www.who.int/publications/i/item/international-standards-for-drug-use-prevention-second-edition-2018" target="_blank" rel="noopener noreferrer"><em>وقاية</em><strong>المعايير الدولية للوقاية من تعاطي المخدرات</strong><small>منظمة الصحة العالمية ومكتب الأمم المتحدة المعني بالمخدرات والجريمة</small></a>
+      </div>
+      <p class="draft">تُراجع الروابط قبل الإطلاق العام، وتُضاف لاحقاً بيانات النشر وتاريخ آخر مراجعة لكل مادة.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="directory" aria-labelledby="d-title">
+    <div class="wrap">
+      <div class="directory">
+        <div class="narrow">
+          <h2 id="d-title" style="font-size:1.6rem">دليل الجهات والخدمات</h2>
+          <p>لن نعرض أرقاماً أو مراكز غير متحقق منها. سيُضاف الدليل بعد التحقق من وجود الجهة ونطاق خدماتها ووسائل التواصل وتاريخ آخر مراجعة.</p>
+        </div>
+        <span class="badge">قيد التحقق، لا جهات مدرجة حالياً</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 id="contact-title">جهّز رسالتك قبل أن تتكلم</h2>
+      <p class="lead narrow">اكتب ما تريد قوله لمختص أو لشخص تثق به، ثم انسخه وشاركه بنفسك. هذه المساحة لا ترسل أي شيء ولا تحفظ ما تكتبه، ولا تدخل فيها معلومات تعريفية أو تفاصيل قد تعرّضك للخطر.</p>
+      <div class="contact-box">
+        <label for="contact-message"><strong>ما الذي ترغب في قوله؟</strong></label>
+        <textarea id="contact-message" maxlength="1500" placeholder="اكتب ما تحتاجه بشكل عام، دون اسم أو عنوان أو رقم هاتف…"></textarea>
+        <div class="q-actions"><button type="button" class="btn primary" id="contact-copy">نسخ الرسالة</button><button type="button" class="btn ghost" id="contact-clear">مسح النص</button></div>
+        <div class="contact-status" id="contact-status" role="status" aria-live="polite">لم يتم إرسال أي شيء. يمكنك نسخ النص ومشاركته بنفسك مع جهة موثوقة إذا رغبت.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <h2 id="faq-title">أسئلة قد تخطر ببالك</h2>
+      <label class="visually-hidden" for="faq-search">ابحث في الأسئلة</label>
+      <input type="search" id="faq-search" class="faq-search" placeholder="اكتب كلمة للبحث…" autocomplete="off">
+      <div id="faq-list">
+        <details><summary>هل تعافي جهة علاجية؟</summary><p>لا. تعافي منصة توعوية مستقلة، ولا تقدّم تشخيصاً أو علاجاً أو وصفات. دورها التعريف والتوجيه إلى مصادر وخدمات موثوقة.</p></details>
+        <details><summary>هل تُحفظ إجاباتي أو ما أكتبه؟</summary><p>لا تُرسل إجاباتك أو رسائلك إلى أي خادم افتراضياً. أسئلة التأمل والمساعد ومساحة الرسالة لا تُحفظ، والمساعد لا يرسل شيئاً إلا إذا فعّلت خيار الذكاء الاصطناعي. وحالة تحدي «وأنت قادر» تبقى في نافذة المتصفح الحالية فقط وتُمسح عند إغلاقها.</p></details>
+        <details><summary>هل يمكنني التوقف فجأة عن المادة؟</summary><p>قد يكون التوقف المفاجئ عن بعض المواد، خصوصاً الكحول والمهدئات، خطراً صحياً. استشر طبيباً أو مختصاً قبل أي تغيير.</p></details>
+        <details><summary>هل الانتكاس يعني أن العلاج فشل؟</summary><p>لا. هو إشارة إلى أن خطة الرعاية تحتاج مراجعة ودعماً أكبر.</p></details>
+        <details><summary>كيف أساند شخصاً لا يريد المساعدة؟</summary><p>ابدأ بحوار هادئ دون لوم، واعرض مساعدتك في الوصول إلى تقييم مهني، وحافظ على حدودك وسلامتك، واطلب دعماً لنفسك أيضاً.</p></details>
+        <details><summary>هل يخفي زر الخروج السريع أثر زيارتي؟</summary><p>لا. الزر ينقلك فوراً إلى صفحة عامة فقط، لكنه لا يمحو سجل التصفح. للخصوصية الكاملة استخدم نافذة التصفح الخاص.</p></details>
+        <details><summary>هل مساعد تعافي ذكاء اصطناعي؟</summary><p>الوضع الافتراضي ردود مكتوبة مسبقاً تعمل داخل جهازك. وإذا فعّلت الخيار الاختياري، يولّد نموذج ذكاء اصطناعي الرد، وقد يخطئ، ولا يستطيع تقييم حالتك أو تشخيصها. عند ذكر خطر عاجل ينبّهك التطبيق لطلب الطوارئ دون إرسال رسالتك لأي جهة.</p></details>
+        <details><summary>هل يعمل الموقع بدون إنترنت؟</summary><p>بعد أول زيارة يمكن لمتصفحك حفظ صفحات الموقع ليفتح دون اتصال. تبقى روابط المصادر الخارجية بحاجة إلى إنترنت.</p></details>
+        <details><summary>هل أستطيع الاعتماد على الموقع بدل المختص؟</summary><p>لا. الموقع للتوعية والتوجيه فقط. التقييم والعلاج من اختصاص طبيب أو مختص مؤهل.</p></details>
+      </div>
+      <p class="faq-empty" id="faq-empty" hidden>لا توجد نتائج مطابقة. جرّب كلمة أخرى.</p>
+    </div>
+  </section>
+
+  <section class="sec alt" id="about" aria-labelledby="about-title">
+    <div class="wrap legal">
+      <h2 id="about-title">من نحن</h2>
+      <p class="lead">تعافي منصة رقمية توعوية مستقلة وغير ربحية، تبسّط المعرفة حول اضطرابات استخدام المواد وتقلّل الوصمة، وتساعد الأفراد والأسر على فهم الخيارات وطلب الدعم المناسب.</p>
+      <h3>ما نفعله وما لا نفعله</h3>
+      <ul>
+        <li>نقدّم معلومات تثقيفية عامة ونوجّه إلى مصادر موثوقة.</li>
+        <li>لسنا مركزاً علاجياً ولا جهة طبية، ولا نقدّم تشخيصاً أو وصفات أو خطط إزالة سموم.</li>
+        <li>لا نعرض أرقاماً أو جهات لم نتحقق منها.</li>
+        <li>الأمثلة الواردة في الموقع افتراضية وليست قصص أشخاص حقيقيين.</li>
+      </ul>
+      <h3>حالة المراجعة</h3>
+      <p>المحتوى مبني على أدلة منظمة الصحة العالمية ومكتب الأمم المتحدة المعني بالمخدرات والجريمة.</p>
+      <span class="status-box">المراجعة الطبية: بانتظار مراجعة مختص مرخّص</span>
+    </div>
+  </section>
+
+  <section class="sec" id="privacy" aria-labelledby="privacy-title">
+    <div class="wrap legal">
+      <h2 id="privacy-title">سياسة الخصوصية</h2>
+      <p class="lead">لأن الموضوع حساس، صُمّم الموقع ليجمع أقل قدر ممكن من البيانات.</p>
+      <h3>ما لا نفعله</h3>
+      <ul>
+        <li>لا حسابات ولا تسجيل دخول ولا نماذج ترسل بيانات.</li>
+        <li>لا أدوات تحليل ولا إعلانات ولا ملفات تعريف ارتباط للتتبع.</li>
+        <li>لا خطوط أو مكتبات من مواقع خارجية.</li>
+        <li>لا تُرسل أسئلة التأمل ولا مساحة الرسالة إلى أي خادم، ولا محادثة المساعد إلا إذا فعّلت بنفسك خيار الذكاء الاصطناعي.</li>
+      </ul>
+      <h3>ما يُخزَّن على جهازك</h3>
+      <ul>
+        <li>حالة تحدي «وأنت قادر» تُحفظ مؤقتاً في نافذة المتصفح الحالية، وتُمسح عند إغلاقها.</li>
+        <li>عند تثبيت الموقع أو فتحه دون اتصال، يحفظ المتصفح نسخة من ملفات الموقع على جهازك.</li>
+      </ul>
+      <h3>ما يجب أن تعرفه</h3>
+      <ul>
+        <li>إذا فعّلت ردود الذكاء الاصطناعي، تُرسل رسائلك عبر وسيط على Netlify إلى Google (Gemini) لتوليد الرد. لا نخزّن المحادثات بأنفسنا، لكن Google قد تستخدم المحتوى المُرسل لتحسين منتجاتها بموجب شروط الطبقة المجانية، وNetlify قد تعالج بيانات تقنية. اقرأ شروط Google قبل التفعيل. لا تكتب اسمك ولا رقمك ولا أي معلومة تعريفية.</li>
+        <li>مزوّد الاستضافة قد يسجّل بيانات تقنية مثل عنوان الشبكة، كأي موقع.</li>
+        <li>عند فتح رابط خارجي (مثل منظمة الصحة العالمية) تنطبق سياسة ذلك الموقع.</li>
+        <li>زر «خروج سريع» ينقلك إلى صفحة عامة لكنه لا يمحو سجل التصفح. للخصوصية الكاملة استخدم نافذة التصفح الخاص.</li>
+      </ul>
+      <p class="small-note">آخر تحديث: نوفمبر 2026</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <strong>تعافي | TAAFI</strong>
+    <p>منصة توعوية مستقلة غير ربحية. المحتوى تثقيفي عام ولا يغني عن تقييم أو علاج مختص مؤهل.</p>
+    <p>في حالات الطوارئ الصحية اطلب الإسعاف أو توجّه فوراً إلى أقرب قسم طوارئ.</p>
+    <div class="footer-links"><a href="#about">من نحن</a><a href="#privacy">سياسة الخصوصية</a><a href="#top">العودة إلى الأعلى ↑</a></div>
+    <button type="button" class="btn primary" id="install-btn" hidden>ثبّت تعافي على جهازك</button>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  /* خروج سريع */
+  var exitBtn = document.getElementById("quick-exit");
+  function quickExit() { try { sessionStorage.clear(); } catch (e) {} window.location.replace("https://www.google.com/"); }
+  exitBtn.addEventListener("click", quickExit);
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") quickExit(); });
+
+  /* شريط التقدم */
+  var bar = document.getElementById("bar");
+  function onScroll() {
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + "%";
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  /* تمييز القسم الحالي في القائمة */
+  var links = Array.prototype.slice.call(document.querySelectorAll("#nav a"));
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          links.forEach(function (a) {
+            a.classList.toggle("active", a.getAttribute("href") === "#" + en.target.id);
+          });
+        }
+      });
+    }, { rootMargin: "-40% 0px -55% 0px" });
+    links.forEach(function (a) {
+      var s = document.querySelector(a.getAttribute("href"));
+      if (s) io.observe(s);
+    });
+  }
+
+  /* أسئلة التأمل الشخصي */
+  var statements = [
+    "أستخدم أكثر مما كنت أنوي، أو لفترة أطول.",
+    "حاولت التقليل أو التوقف ولم أنجح.",
+    "أقضي وقتاً طويلاً في الحصول على المادة أو التعافي من أثرها.",
+    "أشعر برغبة قوية في الاستخدام يصعب تجاهلها.",
+    "تأثرت دراستي أو عملي أو علاقاتي بسبب الاستخدام.",
+    "أستمر رغم علمي بأنه يضرني صحياً أو نفسياً.",
+    "أحتاج كمية أكبر لنفس الأثر، أو أشعر بأعراض عند التوقف.",
+    "تركت أنشطة كنت أحبها بسبب الاستخدام."
+  ];
+  var qList = document.getElementById("q-list");
+  var qResult = document.getElementById("q-result");
+  statements.forEach(function (t, i) {
+    var label = document.createElement("label");
+    label.className = "q-item";
+    var cb = document.createElement("input");
+    cb.type = "checkbox";
+    cb.value = String(i);
+    var span = document.createElement("span");
+    span.textContent = t;
+    label.appendChild(cb);
+    label.appendChild(span);
+    qList.appendChild(label);
+  });
+
+  document.getElementById("q-show").addEventListener("click", function () {
+    var picked = Array.prototype.slice.call(qList.querySelectorAll("input:checked"))
+      .map(function (c) { return statements[Number(c.value)]; });
+    qResult.innerHTML = "";
+    var h = document.createElement("h4");
+    var p = document.createElement("p");
+    if (picked.length === 0) {
+      h.textContent = "لم تحدد أي عبارة";
+      p.textContent = "إذا كان لديك قلق رغم ذلك، فالحديث مع مختص أو شخص موثوق خطوة مشروعة في أي وقت.";
+      qResult.appendChild(h);
+      qResult.appendChild(p);
+    } else {
+      h.textContent = "حدّدت " + picked.length + " من " + statements.length + " عبارات";
+      var ul = document.createElement("ul");
+      picked.forEach(function (t) {
+        var li = document.createElement("li");
+        li.textContent = t;
+        ul.appendChild(li);
+      });
+      p.textContent = "هذا ليس تشخيصاً ولا تقييماً للخطورة. يمكنك أن تحمل هذه النقاط إلى طبيب أو مختص ليقيّم وضعك ويشرح لك الخيارات.";
+      qResult.appendChild(h);
+      qResult.appendChild(ul);
+      qResult.appendChild(p);
+    }
+    qResult.hidden = false;
+    qResult.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  });
+  document.getElementById("q-reset").addEventListener("click", function () {
+    qList.querySelectorAll("input").forEach(function (c) { c.checked = false; });
+    qResult.hidden = true;
+    qResult.innerHTML = "";
+  });
+
+  /* مراحل الرحلة */
+  var stages = [
+    { t: "التقييم", b: "لقاء مع طبيب أو مختص لفهم نمط الاستخدام والمادة والصحة الجسدية والنفسية والظروف الاجتماعية، وتحديد مستوى الأمان.", q: "ما الخيارات المناسبة لحالتي، وما مستوى الرعاية الذي أحتاجه؟" },
+    { t: "الاستقرار الطبي", b: "عند بعض المواد قد يلزم إشراف طبي أثناء التوقف لتقليل المخاطر. هذا قرار يتخذه المختص بعد التقييم، ولا يُجرَّب في المنزل دون استشارة.", q: "هل أحتاج إلى إشراف طبي عند التوقف؟ وما الأعراض التي تستدعي الطوارئ؟" },
+    { t: "العلاج والدعم", b: "قد يشمل علاجاً نفسياً سلوكياً، وأدوية معتمدة لبعض الاضطرابات بحسب التقييم، وعلاج الحالات النفسية المرافقة، ومجموعات دعم الأقران.", q: "ما أنواع العلاج المتاحة لي وما فوائدها ومخاطرها؟" },
+    { t: "الوقاية من الانتكاس", b: "بناء خطة شخصية تحدد المحفزات والمواقف الصعبة، ومن يمكن الاتصال به، وما العمل عند ظهور رغبة قوية أو عودة للاستخدام.", q: "ما خطتي إذا شعرت برغبة قوية أو عدت للاستخدام؟" },
+    { t: "الاستمرارية", b: "التعافي رحلة طويلة تتطلب متابعة دورية ودعماً من الأسرة والأصدقاء وإعادة بناء الروتين والعمل والدراسة والعلاقات.", q: "كيف تكون المتابعة بعد انتهاء المرحلة الأولى، ومن يدعمني؟" }
+  ];
+  var tabsEl = document.getElementById("tabs");
+  var panel = document.getElementById("panel");
+  var current = 0;
+  var tabBtns = [];
+
+  function showStage(i, focus) {
+    current = i;
+    tabBtns.forEach(function (b, k) {
+      b.setAttribute("aria-selected", k === i ? "true" : "false");
+      b.tabIndex = k === i ? 0 : -1;
+    });
+    panel.innerHTML = "";
+    var h = document.createElement("h3");
+    h.textContent = (i + 1) + ". " + stages[i].t;
+    var p = document.createElement("p");
+    p.textContent = stages[i].b;
+    var ask = document.createElement("div");
+    ask.className = "ask";
+    var lab = document.createElement("b");
+    lab.textContent = "سؤال تسأله للمختص";
+    var q = document.createElement("span");
+    q.textContent = stages[i].q;
+    ask.appendChild(lab);
+    ask.appendChild(q);
+    var nav = document.createElement("div");
+    nav.className = "panel-nav";
+    var prev = document.createElement("button");
+    prev.type = "button"; prev.className = "btn outline"; prev.textContent = "المرحلة السابقة";
+    prev.disabled = i === 0; prev.style.opacity = i === 0 ? ".4" : "1";
+    prev.addEventListener("click", function () { showStage(current - 1, false); });
+    var next = document.createElement("button");
+    next.type = "button"; next.className = "btn solid"; next.textContent = "المرحلة التالية";
+    next.disabled = i === stages.length - 1; next.style.opacity = i === stages.length - 1 ? ".4" : "1";
+    next.addEventListener("click", function () { showStage(current + 1, false); });
+    nav.appendChild(prev);
+    nav.appendChild(next);
+    panel.appendChild(h);
+    panel.appendChild(p);
+    panel.appendChild(ask);
+    panel.appendChild(nav);
+    if (focus) tabBtns[i].focus();
+  }
+  stages.forEach(function (s, i) {
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "tab";
+    b.setAttribute("role", "tab");
+    b.textContent = s.t;
+    b.addEventListener("click", function () { showStage(i, false); });
+    b.addEventListener("keydown", function (e) {
+      var n = null;
+      if (e.key === "ArrowLeft") n = Math.min(current + 1, stages.length - 1);
+      if (e.key === "ArrowRight") n = Math.max(current - 1, 0);
+      if (n !== null) { e.preventDefault(); showStage(n, true); }
+    });
+    tabsEl.appendChild(b);
+    tabBtns.push(b);
+  });
+  showStage(0, false);
+
+  /* تمرين التنفس: شهيق 4 ثوان وزفير 6 ثوان */
+  var breath = document.getElementById("breath");
+  var breathText = document.getElementById("breath-text");
+  var breathBtn = document.getElementById("breath-btn");
+  var running = false, timer = null;
+
+  function inhale() {
+    breath.className = "breath in";
+    breathText.textContent = "شهيق…";
+    timer = setTimeout(exhale, 4000);
+  }
+  function exhale() {
+    breath.className = "breath out";
+    breathText.textContent = "زفير…";
+    timer = setTimeout(inhale, 6000);
+  }
+  breathBtn.addEventListener("click", function () {
+    if (!running) {
+      running = true;
+      breathBtn.textContent = "إيقاف التمرين";
+      inhale();
+    } else {
+      running = false;
+      clearTimeout(timer);
+      breath.className = "breath";
+      breathText.textContent = "جاهز؟";
+      breathBtn.textContent = "ابدأ التمرين";
+    }
+  });
+
+
+
+  /* تحدي وأنت قادر: حفظ محلي لهذا اليوم فقط */
+  var challengeList = document.getElementById("challenge-list");
+  var challengeChecks = Array.prototype.slice.call(challengeList.querySelectorAll('input[type="checkbox"]'));
+  var challengeCount = document.getElementById("challenge-count");
+  var challengeFill = document.getElementById("challenge-fill");
+  var challengeMeter = document.getElementById("challenge-meter");
+  var challengeFeedback = document.getElementById("challenge-feedback");
+  var challengeKey = "taafi-challenge-" + new Date().toISOString().slice(0,10);
+  try {
+    var savedChallenge = JSON.parse(sessionStorage.getItem(challengeKey) || "[]");
+    challengeChecks.forEach(function (c, i) { c.checked = savedChallenge.indexOf(i) !== -1; });
+  } catch (e) {}
+  function updateChallenge() {
+    var done = challengeChecks.filter(function (c) { return c.checked; }).length;
+    challengeCount.textContent = done + " من " + challengeChecks.length + " مكتملة";
+    challengeFill.style.width = (done / challengeChecks.length * 100) + "%";
+    challengeMeter.setAttribute("aria-valuenow", String(done));
+    challengeFeedback.textContent = done === challengeChecks.length ? "أكملت خطوات اليوم. خذ لحظة لتقدير جهدك، وغداً يمكنك اختيار خطوات جديدة." : "كل خطوة صغيرة مهمة. اختر ما يناسب قدرتك اليوم، ويمكنك التوقف أو تعديل الخطة.";
+    try { sessionStorage.setItem(challengeKey, JSON.stringify(challengeChecks.map(function(c,i){return c.checked?i:-1;}).filter(function(i){return i>=0;}))); } catch(e) {}
+  }
+  challengeChecks.forEach(function (c) { c.addEventListener("change", updateChallenge); });
+  document.getElementById("challenge-reset").addEventListener("click", function () { challengeChecks.forEach(function(c){c.checked=false;}); updateChallenge(); });
+  updateChallenge();
+
+  /* مساعد إرشادي محلي: ردود مكتوبة مسبقاً وليس ذكاءً اصطناعياً متصلاً */
+  var assistantMessages = document.getElementById("assistant-messages");
+  var assistantInput = document.getElementById("assistant-input");
+  function addChat(text, who, urgent) {
+    var el = document.createElement("div");
+    el.className = "chat-msg " + who + (urgent ? " urgent" : "");
+    el.textContent = text;
+    assistantMessages.appendChild(el);
+    assistantMessages.scrollTop = assistantMessages.scrollHeight;
+    return el;
+  }
+  function norm(s) {
+    return s.toLowerCase()
+      .replace(/[\u064B-\u065F\u0670\u0640]/g, "")
+      .replace(/[أإآ]/g, "ا").replace(/ى/g, "ي").replace(/ة/g, "ه").replace(/ئ/g, "ي").replace(/ؤ/g, "و");
+  }
+  var assistantReplies = {
+    craving: "جرّب الآن أن تنتقل إلى مكان أكثر أماناً وبعيداً عن المحفّز إن أمكن، واتصل بشخص تثق به، وأجّل أي قرار حتى تحصل على دعم. هذه الخطوات لا تكفي وحدها في كل الحالات؛ ناقش مع مختص خطة للتعامل مع الرغبة. إذا كنت تحت تأثير مادة أو تشعر بخطر مباشر فلا تبقَ وحدك واطلب المساعدة العاجلة.",
+    family: "اختر وقتاً هادئاً ومكاناً يحفظ الخصوصية، وابدأ بعبارة مثل: أحتاج أن تسمعني دون لوم. ليس عليك مشاركة كل التفاصيل دفعة واحدة. إذا كان الشخص قد يهددك أو يؤذيك، اختر شخصاً أو جهة أكثر أماناً.",
+    help: "يمكنك البدء بطبيب عام أو طبيب نفسي أو مركز متخصص باضطرابات استخدام المواد. اسأل عن السرية، وخبرة الفريق، وخيارات العلاج، ومخاطر الانسحاب. لا توقف الكحول أو المهدئات فجأة دون تقييم طبي.",
+    relapse: "أنت ما زلت تستحق الرعاية. تواصل مع مختصك أو خدمة علاجية بأسرع وقت واذكر ما حدث بصدق لمراجعة خطة السلامة. إذا كان هناك احتمال جرعة زائدة أو فقدان وعي أو صعوبة تنفس أو تشنجات فاطلب الطوارئ فوراً."
+  };
+  var selfHarmRe = /انتحر|اقتل نفسي|اقتل حالي|انهي حياتي|انهي حالي|اخلص حالي|بدي اموت|بدي موت|اريد ان اموت|اتمنى ان اموت|ما بدي عيش|لا اريد ان اعيش|اوذي نفسي|اذي نفسي|اوذي حالي|اجرح نفسي/;
+  var medicalRe = /جرعه زايده|جرعه مفرطه|اوفر دوز|overdose|لا اتنفس|ما عم اتنفس|صعوبه في التنفس|فاقد الوعي|فقدان الوعي|اغمي|تشنج/;
+  var topicRes = [
+    ["relapse", /انتكاس|رجعت|عدت|رجع|زلت|تعثر|انزلقت/],
+    ["craving", /رغبه|اشتهي|محفز|ضغط|اشتياق/],
+    ["family", /اهلي|اسرتي|ابي|امي|اخي|صديق|اخبر|اصارح|اواجه/],
+    ["help", /مساعده|طبيب|علاج|مركز|مختص|سريه|اين اذهب/]
+  ];
+  var urgentSelf = "أنا آسف أنك تمر بهذا، وسلامتك تهمّني الآن. لا تبقَ وحدك: اتصل بالإسعاف أو بخدمة الطوارئ في بلدك، أو توجّه إلى أقرب قسم طوارئ، واطلب من شخص قريب أن يبقى معك. وإن كان قربك شيء قد تؤذي نفسك به فابتعد عنه. ما تشعر به ثقيل، وهناك من يستطيع مساعدتك الآن.";
+  var urgentMedical = "ما تصفه قد يشير إلى خطر عاجل. لا تنتظر رداً عبر الموقع؛ اتصل بالإسعاف أو توجّه إلى أقرب قسم طوارئ الآن، واطلب من شخص قريب البقاء معك إن أمكن.";
+  var defaultReply = "شكراً لأنك شاركت ما يشغلك. لا أستطيع تقييم حالتك أو تشخيصها من رسالة. حاول تحديد ما تحتاجه الآن: أمان فوري، أم دعم من شخص موثوق، أم موعد مع مختص؟ يمكنك اختيار أحد المواضيع أعلاه. إذا وصفت أعراضاً خطرة أو احتمال جرعة زائدة، اطلب الطوارئ فوراً.";
+  /* ربط اختياري بنموذج ذكاء اصطناعي عبر وسيط: ضع رابط الـ Worker هنا (يترك فارغاً = وضع محلي فقط) */
+  var AI_ENDPOINT = "/.netlify/functions/chat";
+  var aiConsent = document.getElementById("ai-consent");
+  var aiCheck = document.getElementById("ai-check");
+  var aiHistory = [];
+  var aiBusy = false;
+  if (AI_ENDPOINT) aiConsent.hidden = false;
+
+  function localReply(n) {
+    for (var i = 0; i < topicRes.length; i++) {
+      if (topicRes[i][1].test(n)) return assistantReplies[topicRes[i][0]];
+    }
+    return defaultReply;
+  }
+  function askAI(text, n) {
+    aiBusy = true;
+    var typing = addChat("يكتب الرد…", "bot");
+    aiHistory.push({ role: "user", content: text });
+    if (aiHistory.length > 8) aiHistory = aiHistory.slice(-8);
+    var ctrl = new AbortController();
+    var timer = setTimeout(function () { ctrl.abort(); }, 25000);
+    fetch(AI_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ messages: aiHistory }),
+      signal: ctrl.signal
+    }).then(function (r) {
+      if (!r.ok) throw new Error("bad");
+      return r.json();
+    }).then(function (d) {
+      if (!d || typeof d.reply !== "string" || !d.reply) throw new Error("empty");
+      clearTimeout(timer);
+      typing.textContent = d.reply;
+      typing.className = "chat-msg bot ai";
+      aiHistory.push({ role: "assistant", content: d.reply });
+    }).catch(function () {
+      clearTimeout(timer);
+      aiHistory.pop();
+      typing.textContent = localReply(n) + "\n\n(تعذّر الاتصال بالمساعد الذكي الآن، فهذا رد إرشادي محلي.)";
+    }).then(function () {
+      aiBusy = false;
+      assistantMessages.scrollTop = assistantMessages.scrollHeight;
+    });
+  }
+
+  document.querySelectorAll("[data-topic]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      addChat(b.textContent, "user");
+      addChat(assistantReplies[b.getAttribute("data-topic")], "bot");
+    });
+  });
+  document.getElementById("assistant-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (aiBusy) return;
+    var value = assistantInput.value.trim();
+    if (!value) return;
+    addChat(value, "user");
+    assistantInput.value = "";
+    var n = norm(value);
+    /* فحص الخطر محلياً أولاً: لا يُرسل شيء إلى الخادم في هذه الحالات */
+    if (selfHarmRe.test(n)) { addChat(urgentSelf, "bot", true); return; }
+    if (medicalRe.test(n)) { addChat(urgentMedical, "bot", true); return; }
+    if (AI_ENDPOINT && aiCheck.checked) { askAI(value, n); return; }
+    addChat(localReply(n), "bot");
+  });
+
+  /* مساحة كتابة محلية لا ترسل البيانات */
+  var contactMessage = document.getElementById("contact-message");
+  var contactStatus = document.getElementById("contact-status");
+  document.getElementById("contact-copy").addEventListener("click", function () {
+    var value = contactMessage.value.trim();
+    if (!value) { contactStatus.textContent = "اكتب رسالة أولاً، ولا تضف معلومات تعريفية."; return; }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(value).then(function(){contactStatus.textContent="تم نسخ النص إلى الحافظة على جهازك. لم يتم إرساله إلى الموقع.";}).catch(function(){contactStatus.textContent="تعذر النسخ التلقائي. يمكنك تحديد النص ونسخه يدوياً؛ لم يتم إرساله.";});
+    } else { contactMessage.select(); contactStatus.textContent="حدد النص وانسخه يدوياً. لم يتم إرسال أي شيء."; }
+  });
+  document.getElementById("contact-clear").addEventListener("click", function(){contactMessage.value="";contactStatus.textContent="تم مسح النص من الحقل. لم يتم إرسال أي شيء.";});
+
+
+  /* بحث الأسئلة */
+  var search = document.getElementById("faq-search");
+  var items = Array.prototype.slice.call(document.querySelectorAll("#faq-list details"));
+  var empty = document.getElementById("faq-empty");
+  search.addEventListener("input", function () {
+    var v = search.value.trim();
+    var shown = 0;
+    items.forEach(function (d) {
+      var ok = v === "" || d.textContent.indexOf(v) !== -1;
+      d.hidden = !ok;
+      if (ok) shown++;
+    });
+    empty.hidden = shown !== 0;
+  });
+  /* التثبيت والعمل دون اتصال */
+  if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("sw.js").catch(function () {});
+    });
+  }
+  var deferredInstall = null;
+  var installBtn = document.getElementById("install-btn");
+  window.addEventListener("beforeinstallprompt", function (e) {
+    e.preventDefault();
+    deferredInstall = e;
+    installBtn.hidden = false;
+  });
+  installBtn.addEventListener("click", function () {
+    if (!deferredInstall) return;
+    deferredInstall.prompt();
+    deferredInstall.userChoice.then(function () { deferredInstall = null; installBtn.hidden = true; });
+  });
+})();
+</script>
+</body>
+</html>
